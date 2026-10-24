@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 h1 {
-    color: #161616;
+    color: #be3ff0;
     font-size: 40px;
 }
 h2 {
@@ -77,6 +77,17 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+.escuro {
+  color: white;
+  background-color: #18181B;
+}
+.escuro .card {
+   background-color: #18181B;
+     color: white;
+}
+.escuro h2 {
+    color:white;
 }
 @media (max-width: 600px) {
   header {
