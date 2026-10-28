@@ -20,7 +20,7 @@
 <main>
 <section class="card">
 <h1><strong>Fale comigo</strong></h1>
-<form> 
+<form id="formulario">
 <p>
 <label for="nome">Nome</label>
 <input type="text" id="nome" name="nome" required>
@@ -36,9 +36,10 @@
 <p>
 <label for="assunto">Assunto</label>
 <select id="assunto" name="assunto">
+<option>Selecione</option>
 <option>Orçamento</option>
 <option>Duvida</option>
-<option>outro</option>
+<option>Outro</option>
 </select>
 </p>
 <p>
@@ -49,11 +50,13 @@
 </p>
 </p>
 </form>
+<p id="resposta"></p>
 </section>
 </main>
 <footer>
 <p>2026 Eduardo Davi. Todos os direitos reservados.</p>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/contato.js"></script>
 </body>
 </html>
