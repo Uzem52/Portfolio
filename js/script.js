@@ -48,3 +48,15 @@ if (window.location.pathname.includes("formacao.html") || window.location.pathna
         titulo.textContent = "Minhas formações";
     }
 }
+const gostos = ["Programação", "Jogos", "Música", "Academia", "séries"];
+console.log(gostos.length);
+console.log(gostos[0]);
+const lista = document.querySelector("#gostos");
+if (lista) {
+
+for (const gosto of gostos) {
+    const item = document.createElement ("li");
+    item.textContent = gosto;
+    lista.appendChild(item);
+}
+}

@@ -108,3 +108,21 @@ nav a:hover {
 .erro {
   color: red; 
 }
+.footer__redes a {
+  color: #9a33de;
+  font-size: 1.75rem;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.footer__redes a:hover {
+  transform: scale(1.15);
+}
+.footer__redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
