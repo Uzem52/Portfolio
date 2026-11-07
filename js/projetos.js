@@ -16,7 +16,10 @@ function criarCard(projeto) {
     card.appendChild(texto);
     listaProjetos.appendChild(card);
 }
-
-for (const projeto of projetos) {
-    criarCard(projeto);
-}
+fetch("projetos.json")
+    .then((resposta) => resposta.json())
+    .then(projetos => {
+        for (const projeto of projetos) {
+            criarCard(projeto);
+        }
+    });
