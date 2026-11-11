@@ -2,12 +2,17 @@
     {
         "titulo": "Portifólio",
         "descricao": "Meu site, com 5 páginas, no ar.",
-        "categoria": "Estudos"
+        "categoria": "Estudo"
     },
     {
         "titulo": "Figma",
-        "descricao": "4 telas de um vite ficticio.",
+        "descricao": "4 telas de um site fictício.",
         "categoria": "Estudo"
+    },
+    {
+        "titulo": "Playlist",
+        "descricao": "mirrorball - taylor swift, All too well 10 min version - taylor swift.",
+        "categoria": "Pessoal"
     }
 ]
     
