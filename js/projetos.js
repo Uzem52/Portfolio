@@ -16,6 +16,19 @@ function criarCard(projeto) {
     card.appendChild(texto);
     listaProjetos.appendChild(card);
 }
+
+const mostrar = (lista) => {
+    listaprojetos.innerHTML = "";
+    for (const projeto of lista) {
+        criarCard(projeto);
+    }
+    const titulos = lista.map((projeto) => projeto.titulo);
+    contagem.textContent = `${lista.length} projetos : ${titulos.join(", ")}`;
+};
+const filtrar = (categoria) => {
+    const lista = todos.filter((projeto) => projeto.categoria === categoria);
+    mostrar(lista);
+};
 fetch("projetos.json")
     .then((resposta) => resposta.json())
     .then(projetos => {
@@ -23,3 +36,10 @@ fetch("projetos.json")
             criarCard(projeto);
         }
     });
+const botaoTodos = document.querySelector("#filtro-todos");
+const botaoPessoal = document.querySelector("#filtro-pessoal");
+const botaoEstudo = document.querySelector("#filtro-estudo");
+
+botaoTodos.addEventListener("click", () => mostrar(todos));
+botaoPessoal.addEventListener("click", () => filtrar("pessoal"));
+botaoEstudo.addEventListener("click", () => filtrar("estudo"));
