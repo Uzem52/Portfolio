@@ -1,6 +1,8 @@
 const projetos = [
     { titulo: "Portfólio", descricao: "Meu site, com 5 paginas no ar"},
     { titulo: "Protótipo figma", descricao: "4 telas de um site fictício"},
+    { titulo: "Lâmpada", descricao: "Lâmpada que acende e apaga com botão"},
+    { titulo: "Calculadora", descricao: "Calculadora simples com operações básicas"},
 ];
 console.log(projetos[0].titulo);
 const listaProjetos = document.querySelector("#lista-projetos");

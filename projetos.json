@@ -13,6 +13,16 @@
         "titulo": "Playlist",
         "descricao": "mirrorball - taylor swift, All too well 10 min version - taylor swift.",
         "categoria": "Pessoal"
+    },
+    {
+        "titulo": "Lâmpada",
+        "descricao": "Lâmpada que acende e apaga com botão.",
+        "categoria": "Estudo"
+    },
+    {
+        "titulo": "Calculadora",
+        "descricao": "Calculadora simples com operações básicas.",
+        "categoria": "Estudo"
     }
 ]
     
