@@ -279,3 +279,8 @@ main > * {
     transform: translateY(0) scale(1);
   }
 }
+body.saindo main {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: 0.25s ease;
+}

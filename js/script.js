@@ -60,3 +60,13 @@ for (const gosto of gostos) {
     lista.appendChild(item);
 }
 }
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    const destino = link.href;
+    if (link.target === '_blank' || link.href === location.href) return;
+
+    e.preventDefault();
+    document.body.classList.add('saindo');
+    setTimeout(() => (window.location.href = destino), 250);
+  });
+});
